@@ -22,6 +22,12 @@ public class conversion {
 		String s= String.valueOf(c);
 		System.out.println(s +"jhgsadjh");
 	}
+	public void int_char() {
+		int i=1000;
+		char[] letter= Character.toChars(i);
+		System.out.println(letter);
+	}
+	
 	
 	
 	public static void main(String[] args) {

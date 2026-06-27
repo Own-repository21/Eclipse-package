@@ -41,7 +41,7 @@ public void triangle()
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		pattern s= new pattern();
-		//s.basic(4);
+		s.basic(4);
 		s.triangle();
 
 	}

@@ -15,11 +15,15 @@ import java.awt.event.KeyEvent;
 public class MouseandKeyboard {
 	public void mouseaction1() 
 	{
+		 // Initialize WebDriver
 		WebDriver driver =new ChromeDriver(); 
 		driver.manage().window().maximize(); 
 		driver.get("https://www.ebay.com");
+		 // Initialize Actions class
 		Actions mouse = new Actions(driver);
+		// Wait for "Electronics" menu and hover over it
 		mouse.moveToElement(driver.findElement(By.xpath("//*[text()='Electronics']//parent::li"))).perform();
+		// Wait for "Cameras and Photos" submenu to be clickable and click it
 		WebDriverWait Wait = new WebDriverWait(driver,Duration.ofSeconds(60));
 		Wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='Cameras and photos']//parent::li"))); 
 		mouse.moveToElement(driver.findElement(By.xpath("//*[text()='Cameras and photos']//parent::li"))).click().perform();
@@ -51,6 +55,7 @@ public class MouseandKeyboard {
 		driver.manage().window().maximize(); 
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		// Initialize Actions class
 		Actions mouse = new Actions(driver);
 		mouse.moveToElement(driver.findElement(By.id("email"))).sendKeys("Maha").perform();
 		mouse.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
@@ -84,7 +89,7 @@ public class MouseandKeyboard {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		MouseandKeyboard s = new MouseandKeyboard();
-		s.Keyboard2();
+		s.Keyboard1();
 
 	}
 

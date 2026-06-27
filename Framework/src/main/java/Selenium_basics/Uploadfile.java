@@ -30,8 +30,9 @@ public class Uploadfile {
 		r.keyRelease(KeyEvent.VK_CONTROL);
 		r.keyRelease(KeyEvent.VK_V);
 		r.keyPress(KeyEvent.VK_ENTER);
-		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
 	}
+	
 	
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub

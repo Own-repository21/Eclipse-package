@@ -21,10 +21,48 @@ public class conditions {
 			System.out.println("Invalid");
 		}
 	}
+	
+	public void switchconditions(String Gender)
+	{
+		switch(Gender)
+		{
+		case "M":
+			System.out.println("You are a Male");
+			break;
+		case "F":
+			System.out.println("You are a Female");
+			break;
+		default:
+				System.out.println("You are a Transgenders");
+				break;
+		}
+	}
+	public void forloop()
+	{
+		for(int i=1;i<10;i++) {
+		System.out.println(i);	
+		}
+	}
+	public void whileloop(int i) {
+		while (i<10) {
+		System.out.println(i);
+		i=i+1;
+		}
+	}
+	public void dowhile(int i) {
+		do {
+			System.out.println(i);
+			i=i+1;
+		}while(i<10);
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		conditions a = new conditions(); //object implementation
 		a.ifconditions(60); //method call
+		a.switchconditions("F");
+		a.forloop();
+		a.whileloop(6);
+		a.dowhile(6);
 	}
 
 }

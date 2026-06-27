@@ -33,12 +33,13 @@ public class Primenumbers {
 	      System.out.println("The number is prime");
 	    }
 	  }
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Primenumbers sample = new Primenumbers();
 		sample.numbers(11);
-		sample.prime(21);
+		sample.prime(23);
 
 	}
 
