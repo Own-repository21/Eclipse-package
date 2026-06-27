@@ -45,6 +45,7 @@ public void dulicate_char_collection() {
      }
    }
 
+//print duplicates string
 public void duplicate_count() {
 	  String str = "programming";
 	  Map<Character, Integer> map = new LinkedHashMap<>();
